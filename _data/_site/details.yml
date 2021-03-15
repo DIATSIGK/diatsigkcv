@@ -5,12 +5,12 @@ urls:
  - wki.pe/friedrich_nietzsche
  - twitter.com/tinynietzsche
 
-feedback: >
+feedback: 
   This is my feedback to you.
   Even if I include linebreaks here,
   all of the linebreaks will be removed when the value is inserted.
 
-block: |
+block: 
     This pipe does something a little different.
     It preserves the breaks.
     This is really helpful for code samples,

@@ -8,12 +8,18 @@
   </head>
   <body>
     <h1>Hello World, this is the {{site.data.details.name}} </h1>
-<p><b>Feedback</b></p>
-<p>{{site.data.details.Profile}} </p>
 
-<p><b>Block</b></p>
-<p>{{site.data.details.Education}} </p>
-    <p>Reach me at:
+    <p><b>Profile</b></p>
+<p>{{site.data.details.profile}} </p>
+
+<p><b>Education</b></p>
+      <ul>
+      {% for item in site.data.details.education %}
+      <li> {{item.title}}  </li>
+      {% endfor %}
+    </ul>
+
+<p>Reach me at:
     <ul>
       {% for url in site.data.details.urls %}
         <li><a href="http://{{url}}">{{url}}</a></li>
